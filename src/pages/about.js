@@ -1,25 +1,25 @@
-import React from "react";
-import { Helmet } from "react-helmet";
+import React from "react"
+import { Helmet } from "react-helmet"
 
 // Image
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 // Components
-import Header from "../components/header";
+import Header from "../components/header"
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
-        query {
-            aboutPic: file(relativePath: { eq: "about-pic.png" }) {
-                childImageSharp {
-                    fluid(maxWidth: 2000) {
-                        ...GatsbyImageSharpFluid
-                    }
-                }
-            }
+    query {
+      aboutPic: file(relativePath: { eq: "about-pic.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 2000) {
+            ...GatsbyImageSharpFluid
+          }
         }
-    `);
+      }
+    }
+  `)
 
   return (
     <div>
@@ -27,15 +27,30 @@ const AboutPage = () => {
         <meta charSet="utf-8" />
         <title>about.</title>
       </Helmet>
-      <Header/>
+      <Header />
       <div className="about-row">
         <div className="about-img">
           <Img fluid={data.aboutPic.childImageSharp.fluid} />
         </div>
         <div className="about-text">
-          <h2>currently based in atlanta, i am a third-year computer science student at the <span style={{fontWeight: "bold"}}>georgia institute of technology</span>, with a concentration in people and media</h2>
-          <h2>i have also completed a film and media studies minor, and have previous experience with user interface design coursework apart from major-related courses</h2>
-          <h2>outside of the classroom, i am passionate about mental health awareness on campus, accessible design practices, and working with nonprofits in atlanta</h2>
+          <h2>
+            currently based in atlanta, i am a third-year computer science
+            student at the{" "}
+            <span style={{ fontWeight: "bold" }}>
+              georgia institute of technology
+            </span>
+            , with a concentration in people and media
+          </h2>
+          <h2>
+            i have also completed a film and media studies minor, and have
+            previous experience with user interface design coursework apart from
+            major-related courses
+          </h2>
+          <h2>
+            outside of the classroom, i am passionate about mental health
+            awareness on campus, accessible design practices, and working with
+            nonprofits in atlanta
+          </h2>
         </div>
       </div>
       <div className="about-more">
@@ -83,7 +98,7 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutPage;
+export default AboutPage
