@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { Helmet } from "react-helmet"
+import ReactModal from "react-modal"
 
 // Font Awesome Library
 import "@fortawesome/react-fontawesome"
@@ -19,7 +20,7 @@ import Djify from "../components/djify"
 import Findit from "../components/findit"
 
 // Modals
-import ReactModal from "react-modal"
+import SpotifyModal from "../components/modals/spotifyModal"
 
 // Style
 import "../styles/styles.scss"
@@ -38,9 +39,8 @@ const IndexPage = () => {
         <title>christopher. obando</title>
       </Helmet>
       <Header />
-      <ReactModal isOpen={spotifyModal} contentLabel="Spotify Modal">
-        <button onClick={spotifyClick}>{"<"}</button>
-        <h1>spotify web application.</h1>
+      <ReactModal isOpen={spotifyModal} contentLabel="Spotify Modal" id="spotify-modal" onRequestClose={spotifyClick}>
+        <SpotifyModal/>
       </ReactModal>
       <section className="row">
         <Spotify onClick={spotifyClick} />
