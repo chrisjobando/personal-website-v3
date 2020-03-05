@@ -1,8 +1,8 @@
-import React from "react"
+import React from 'react';
 
 // Font Awesome
-import { faReact, faSpotify } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faReact, faSpotify } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const SpotifyModal = ({ onClick }) => {
   return (
@@ -66,7 +66,7 @@ const SpotifyModal = ({ onClick }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SpotifyModal
+export default SpotifyModal;

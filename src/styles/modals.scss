@@ -139,7 +139,6 @@
 
   .first-row {
     display: flex;
-    flex-grow: 1;
 
     @media (max-width: 1250px) {
       flex-flow: column-reverse;
@@ -198,5 +197,59 @@
     .second-row {
       margin-top: 15px !important;
     }
+  }
+}
+
+.bogbot.expand {
+  .bogbot-icons {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+
+  .link-row {
+    display: flex;
+    a {
+      color: $white;
+    }
+  }
+}
+
+.djify.expand, .findit.expand {
+  height: 225px;
+  margin-left: 0;
+
+  .extra-info {
+    display: flex;
+
+    .link-row {
+      margin-left: auto;
+    }
+  }
+  
+  .modal-link {
+    font-weight: normal;
+    color: $black;
+  }
+
+  @media(max-width: 700px) {
+    height: 500px;
+  }
+}
+
+.djify.expand {
+  flex-direction: column;
+}
+
+.findit.expand {
+  .first-row {
+    display: flex;
+  }
+
+  .main-text {
+    margin-left: auto;
+  }
+
+  .modal-link {
+    margin-right: auto;
   }
 }

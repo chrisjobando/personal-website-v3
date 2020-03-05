@@ -25,6 +25,9 @@ import ElavonModal from '../components/modals/elavonModal';
 import NonprofitModal from '../components/modals/nppModal';
 import Liv2BGirlModal from '../components/modals/liv2bgirlModal';
 import UnEatModal from '../components/modals/uneatModal';
+import BogBotModal from '../components/modals/bogbotModal';
+import DjifyModal from '../components/modals/djifyModal';
+import FinditModal from '../components/modals/finditModal';
 
 // Style
 import '../styles/styles.scss';
@@ -35,6 +38,9 @@ const IndexPage = () => {
   const [nppModal, setNppModal] = useState(false);
   const [livModal, setLivModal] = useState(false);
   const [uneatModal, setUneatModal] = useState(false);
+  const [bogbotModal, setBogbotModal] = useState(false);
+  const [djifyModal, setDjifyModal] = useState(false);
+  const [finditModal, setFinditModal] = useState(false);
 
   function spotifyClick() {
     setSpotModal(!spotifyModal);
@@ -54,6 +60,18 @@ const IndexPage = () => {
 
   function uneatClick() {
     setUneatModal(!uneatModal);
+  }
+
+  function bogbotClick() {
+    setBogbotModal(!bogbotModal);
+  }
+
+  function djifyClick() {
+    setDjifyModal(!djifyModal);
+  }
+
+  function finditClick() {
+    setFinditModal(!finditModal);
   }
 
   return (
@@ -88,15 +106,27 @@ const IndexPage = () => {
         )}
       </section>
       <section className="row">
-        <BogBot />
+        {bogbotModal ? (
+          <BogBotModal onClick={bogbotClick} />
+        ) : (
+          <BogBot onClick={bogbotClick} />
+        )}
         {uneatModal ? (
           <UnEatModal onClick={uneatClick} />
         ) : (
           <UnEat onClick={uneatClick} />
         )}
         <div className="submodule">
-          <Djify />
-          <Findit />
+          {djifyModal ? (
+            <DjifyModal onClick={djifyClick} />
+          ) : (
+            <Djify onClick={djifyClick} />
+          )}
+          {finditModal ? (
+            <FinditModal onClick={finditClick} />
+          ) : (
+            <Findit onClick={finditClick} />
+          )}
         </div>
       </section>
     </div>

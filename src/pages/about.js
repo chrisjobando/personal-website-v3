@@ -1,12 +1,12 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 // Image
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 // Components
-import Header from "../components/header"
+import Header from '../components/header';
 
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const AboutPage = () => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div>
@@ -35,8 +35,8 @@ const AboutPage = () => {
         <div className="about-text">
           <h2>
             currently based in atlanta, i am a third-year computer science
-            student at the{" "}
-            <span style={{ fontWeight: "bold" }}>
+            student at the{' '}
+            <span style={{ fontWeight: 'bold' }}>
               georgia institute of technology
             </span>
             , with a concentration in people and media
@@ -98,7 +98,7 @@ const AboutPage = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default AboutPage
+export default AboutPage;

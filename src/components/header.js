@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
-import React from "react"
+import { Link } from 'gatsby';
+import React from 'react';
 
-import Logo from "../images/logo.png"
+import Logo from '../images/logo.png';
 
 const Header = () => (
   <header>
@@ -29,7 +29,7 @@ const Header = () => (
 
       <div className="statement">
         <p>
-          hey, i’m <span style={{ fontWeight: "medium" }}>Christopher</span>.
+          hey, i’m <span style={{ fontWeight: 'medium' }}>Christopher</span>.
         </p>
         <p>
           i’m a <span className="purple-text">software developer</span> with a
@@ -38,6 +38,6 @@ const Header = () => (
       </div>
     </div>
   </header>
-)
+);
 
-export default Header
+export default Header;

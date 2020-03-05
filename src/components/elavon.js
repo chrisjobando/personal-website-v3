@@ -1,12 +1,12 @@
-import React from "react"
+import React from 'react';
 
 // Image
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 // Font Awesome
-import { faJava } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faJava } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Elavon = ({ onClick }) => {
   const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const Elavon = ({ onClick }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div
@@ -40,7 +40,7 @@ const Elavon = ({ onClick }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Elavon
+export default Elavon;

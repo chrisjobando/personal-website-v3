@@ -1,11 +1,11 @@
-import React from "react"
-import { Helmet } from "react-helmet"
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
 // Components
-import Header from "../components/header"
+import Header from '../components/header';
 
 // Resume
-import Resume from "../downloads/Obando_C_Resume_Spring2020.pdf"
+import Resume from '../downloads/Obando_C_Resume_Spring2020.pdf';
 
 const ResumePage = () => (
   <div>
@@ -14,7 +14,7 @@ const ResumePage = () => (
       <title>resume.</title>
     </Helmet>
     <Header />
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: 'center' }}>
       <a href={Resume} className="resume-pdf" download>
         see pdf.
       </a>
@@ -220,6 +220,6 @@ const ResumePage = () => (
       </div>
     </div>
   </div>
-)
+);
 
-export default ResumePage
+export default ResumePage;

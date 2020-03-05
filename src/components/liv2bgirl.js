@@ -1,16 +1,16 @@
-import React from "react"
+import React from 'react';
 
 // Image
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 // Font Awesome
-import { faReact } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Icons
-import nextLogo from "../images/next-white.svg"
-import mongoLogo from "../images/mongo-white.svg"
+import nextLogo from '../images/next-white.svg';
+import mongoLogo from '../images/mongo-white.svg';
 
 const Liv2BGirl = ({ onClick }) => {
   const data = useStaticQuery(graphql`
@@ -23,7 +23,7 @@ const Liv2BGirl = ({ onClick }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div
@@ -45,18 +45,18 @@ const Liv2BGirl = ({ onClick }) => {
             src={nextLogo}
             className="icon"
             alt="Next Logo"
-            style={{ width: "4em" }}
+            style={{ width: '4em' }}
           />
           <img
             src={mongoLogo}
             className="icon"
             alt="Mongo Logo"
-            style={{ width: "4em" }}
+            style={{ width: '4em' }}
           />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Liv2BGirl
+export default Liv2BGirl;

@@ -1,16 +1,16 @@
-import React from "react"
+import React from 'react';
 
 // Image
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 // Font Awesome
-import { faReact } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faReact } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 // Icons
-import nextLogo from "../images/next.svg"
-import mongoLogo from "../images/mongo.svg"
+import nextLogo from '../images/next.svg';
+import mongoLogo from '../images/mongo.svg';
 
 const NonprofitPortal = ({ onClick }) => {
   const data = useStaticQuery(graphql`
@@ -23,7 +23,7 @@ const NonprofitPortal = ({ onClick }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div
@@ -39,7 +39,7 @@ const NonprofitPortal = ({ onClick }) => {
         <div className="demo-img">
           <Img
             fluid={data.nppDemo.childImageSharp.fluid}
-            imgStyle={{ objectFit: "contain" }}
+            imgStyle={{ objectFit: 'contain' }}
           />
         </div>
         <div className="npp-icons">
@@ -48,18 +48,18 @@ const NonprofitPortal = ({ onClick }) => {
             src={nextLogo}
             className="icon"
             alt="Next Logo"
-            style={{ width: "4em" }}
+            style={{ width: '4em' }}
           />
           <img
             src={mongoLogo}
             className="icon"
             alt="Mongo Logo"
-            style={{ width: "4em" }}
+            style={{ width: '4em' }}
           />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default NonprofitPortal
+export default NonprofitPortal;

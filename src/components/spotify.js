@@ -1,12 +1,12 @@
-import React from "react"
+import React from 'react';
 
 // Image
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { useStaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 // Font Awesome
-import { faReact, faSpotify } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faReact, faSpotify } from '@fortawesome/free-brands-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Spotify = ({ onClick }) => {
   const data = useStaticQuery(graphql`
@@ -19,7 +19,7 @@ const Spotify = ({ onClick }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div
@@ -41,7 +41,7 @@ const Spotify = ({ onClick }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Spotify
+export default Spotify;
