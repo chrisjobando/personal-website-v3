@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import nextLogo from "../images/next-white.svg"
 import mongoLogo from "../images/mongo-white.svg"
 
-const Liv2BGirl = () => {
+const Liv2BGirl = ({ onClick }) => {
   const data = useStaticQuery(graphql`
     query {
       liv2bgirlDemo: file(relativePath: { eq: "liv2bgirl-demo.png" }) {
@@ -26,7 +26,13 @@ const Liv2BGirl = () => {
   `)
 
   return (
-    <div className="liv2bgirl module">
+    <div
+      className="liv2bgirl module"
+      onClick={onClick}
+      onKeyDown={onClick}
+      role="button"
+      tabIndex="0"
+    >
       <div className="main-text">liv2bgirl.</div>
       <div className="second-text">sr. frontend developer</div>
       <div className="second-row">

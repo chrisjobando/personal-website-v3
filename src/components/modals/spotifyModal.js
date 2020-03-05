@@ -21,7 +21,7 @@ const SpotifyModal = ({ onClick }) => {
         </div>
       </div>
       <div className="second-row">
-        <div className="spotify-icons-2">
+        <div className="spotify-icons-2 web-only">
           <FontAwesomeIcon icon={faSpotify} className="icon" size="3x" />
           <FontAwesomeIcon icon={faReact} className="icon" size="3x" />
         </div>
@@ -35,12 +35,12 @@ const SpotifyModal = ({ onClick }) => {
             myself to learn more about open-source apis, and spotify is a
             service i use daily that i was interested in working with the api.
           </p>
-          <p>
+          <p className="web-only">
             this application is still under development, and my goals for it are
             to integrate playlist customization, generate personalized
             playlists, export playlists to youtube, and more
           </p>
-          <p>
+          <p className="web-only">
             through its development, i hope to improve my ui design skills and
             eventually make a custom webhook or socket to enable open
             conversation between the application and the api
