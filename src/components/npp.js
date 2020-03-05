@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import nextLogo from "../images/next.svg"
 import mongoLogo from "../images/mongo.svg"
 
-const NonprofitPortal = () => {
+const NonprofitPortal = ({ onClick }) => {
   const data = useStaticQuery(graphql`
     query {
       nppDemo: file(relativePath: { eq: "npp-demo.png" }) {
@@ -26,7 +26,13 @@ const NonprofitPortal = () => {
   `)
 
   return (
-    <div className="nonprofit module">
+    <div
+      className="nonprofit module"
+      onClick={onClick}
+      onKeyDown={onClick}
+      role="button"
+      tabIndex="0"
+    >
       <div className="main-text">nonprofit application portal.</div>
       <div className="second-text">frontend developer</div>
       <div className="second-row">

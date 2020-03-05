@@ -21,15 +21,27 @@ import Findit from "../components/findit"
 
 // Modals
 import SpotifyModal from "../components/modals/spotifyModal"
+import ElavonModal from "../components/modals/elavonModal"
+import NonprofitModal from "../components/modals/nppModal"
 
 // Style
 import "../styles/styles.scss"
 
 const IndexPage = () => {
   const [spotifyModal, setSpotModal] = useState(false)
+  const [elavonModal, setElavModal] = useState(false)
+  const [nppModal, setNppModal] = useState(false)
 
   function spotifyClick() {
     setSpotModal(!spotifyModal)
+  }
+
+  function elavonClick() {
+    setElavModal(!elavonModal)
+  }
+
+  function nppClick() {
+    setNppModal(!nppModal)
   }
 
   return (
@@ -39,15 +51,24 @@ const IndexPage = () => {
         <title>christopher. obando</title>
       </Helmet>
       <Header />
-      <ReactModal isOpen={spotifyModal} contentLabel="Spotify Modal" id="spotify-modal" onRequestClose={spotifyClick}>
-        <SpotifyModal/>
-      </ReactModal>
       <section className="row">
-        <Spotify onClick={spotifyClick} />
-        <Elavon />
+        {spotifyModal ? (
+          <SpotifyModal onClick={spotifyClick} />
+        ) : (
+          <Spotify onClick={spotifyClick} />
+        )}
+        {elavonModal ? (
+          <ElavonModal onClick={elavonClick} />
+        ) : (
+          <Elavon onClick={elavonClick} />
+        )}
       </section>
       <section className="row">
-        <NonprofitPortal />
+        {nppModal ? (
+          <NonprofitModal onClick={nppClick} />
+        ) : (
+          <NonprofitPortal onClick={nppClick} />
+        )}
         <Liv2BGirl />
       </section>
       <section className="row">

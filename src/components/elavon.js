@@ -8,7 +8,7 @@ import Img from "gatsby-image"
 import { faJava } from "@fortawesome/free-brands-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const Elavon = () => {
+const Elavon = ({ onClick }) => {
   const data = useStaticQuery(graphql`
     query {
       elavonDemo: file(relativePath: { eq: "elavon-demo.png" }) {
@@ -22,7 +22,13 @@ const Elavon = () => {
   `)
 
   return (
-    <div className="elavon module">
+    <div
+      className="elavon module"
+      onClick={onClick}
+      onKeyDown={onClick}
+      role="button"
+      tabIndex="0"
+    >
       <div className="main-text">elavon.</div>
       <div className="second-text">software engineer intern</div>
       <div className="second-row">

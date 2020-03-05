@@ -29,12 +29,16 @@ header {
     }
 
     .inner-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: $white;
         height: 80px;
         display: flex;
         align-items: center;
         justify-content: space-between;
         font-weight: bold;
-        box-shadow: 0px 4px 4px rgba($black, 0.25);
+        z-index: 999;
 
         .logo {
             margin-left: 30px;
@@ -77,12 +81,14 @@ header {
                 margin-left: 0;
             }
 
-            .active {
-                text-decoration: underline;
-
-                @media(max-width: 375px) {
+            @media(max-width: 375px) {
+                .work-link {
                     display: none;
                 }
+            }
+
+            .active {
+                text-decoration: underline;
             }
         };
     };
@@ -93,6 +99,7 @@ header {
         font-size: 1.75rem;
         line-height: 1.5em;
         margin: 50px;
+        margin-top: 100px;
         margin-left: 5%;
 
         .purple-text {
