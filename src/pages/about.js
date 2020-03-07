@@ -8,6 +8,17 @@ import Img from 'gatsby-image';
 // Components
 import Header from '../components/header';
 
+// Font Awesome
+import {
+  faGithub,
+  faLinkedin,
+  faInstagram,
+} from '@fortawesome/free-brands-svg-icons';
+
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 const AboutPage = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -51,6 +62,39 @@ const AboutPage = () => {
             awareness on campus, accessible design practices, and working with
             nonprofits in atlanta
           </h2>
+          <h2 style={{ fontWeight: 'bold' }}>follow me:</h2>
+          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+            <a
+              href="https://github.com/chrisjobando/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'black' }}
+            >
+              <FontAwesomeIcon icon={faGithub} className="icon" size="4x" />
+            </a>
+            <a
+              href="https://linkedin.com/in/chrisjobando"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'black' }}
+            >
+              <FontAwesomeIcon icon={faLinkedin} className="icon" size="4x" />
+            </a>
+            <a
+              href="https://instagram.com/chris.obando"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: 'black' }}
+            >
+              <FontAwesomeIcon icon={faInstagram} className="icon" size="4x" />
+            </a>
+            <a
+              href="mailto: chrisjobando@gmail.com?subject = Hey!"
+              style={{ color: 'black' }}
+            >
+              <FontAwesomeIcon icon={faEnvelope} className="icon" size="4x" />
+            </a>
+          </div>
         </div>
       </div>
       <div className="about-more">

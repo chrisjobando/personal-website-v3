@@ -226,7 +226,7 @@ const ResumePage = () => (
       </div>
       <h1 className="section-head">skills.</h1>
       <div className="subsection">
-        <div className="sub-head-2">
+        <div className="sub-head-2 icon-display">
           <FontAwesomeIcon icon={faReact} className="icon" size="4x" />
           <FontAwesomeIcon icon={faJs} className="icon" size="4x" />
           <span className="icon">

@@ -336,14 +336,17 @@ header {
     }
   }
 
+  .icon-display {
+    max-width: 1250px;
+  }
+
   .sub-head-2 {
     display: flex;
     flex-flow: row wrap;
 
     .icon {
-      width: 33%;
       text-align: center;
-      margin: 50px 0;
+      margin: 50px;
     }
 
     .sub-head4 {
