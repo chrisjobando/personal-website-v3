@@ -40,11 +40,14 @@ const FinditModal = ({ onClick }) => {
           <p>
             for hackgt6, we created an application that finds stores near you,
             pulls up their inventory, and allows you to scan them, create a QR
-            code that allows for fast checkout. this application was created
-            with accessibility in mind, with the intent being for those who are
-            deaf/heard-of-hearing to be able to order from restaurants or stores
-            that require over-the-counter service such as a pharmacy to be able
-            to order their items quickly and without as much hassle.
+            code that allows for fast checkout.
+          </p>
+          <p>
+            this application was created with accessibility in mind, with the
+            intent being for those who are deaf/heard-of-hearing to be able to
+            order from restaurants or stores that require over-the-counter
+            service such as a pharmacy to be able to order their items quickly
+            and without as much hassle.
           </p>
         </div>
       </div>

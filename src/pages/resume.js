@@ -4,6 +4,32 @@ import { Helmet } from 'react-helmet';
 // Components
 import Header from '../components/header';
 
+// Icons
+import nextLogo from '../images/next.svg';
+import mongoLogo from '../images/mongo.svg';
+
+// Font Awesome
+import {
+  faReact,
+  faJs,
+  faFigma,
+  faPython,
+  faJava,
+  faAngular,
+  faGit,
+  faAdobe,
+  faHtml5,
+  faSass,
+} from '@fortawesome/free-brands-svg-icons';
+
+import {
+  faCopyright,
+  faGuitar,
+  faFilm,
+} from '@fortawesome/free-solid-svg-icons';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 // Resume
 import Resume from '../downloads/Obando_C_Resume_Spring2020.pdf';
 
@@ -201,21 +227,25 @@ const ResumePage = () => (
       <h1 className="section-head">skills.</h1>
       <div className="subsection">
         <div className="sub-head-2">
-          <h2 className="sub-head4">reactjs</h2>
-          <h2 className="sub-head4">javascript</h2>
-          <h2 className="sub-head4">nextjs</h2>
-          <h2 className="sub-head4">mongodb</h2>
-          <h2 className="sub-head4">figma</h2>
-          <h2 className="sub-head4">python</h2>
-          <h2 className="sub-head4">java</h2>
-          <h2 className="sub-head4">c</h2>
-          <h2 className="sub-head4">angular</h2>
-          <h2 className="sub-head4">git</h2>
-          <h2 className="sub-head4">adobe creative suite</h2>
-          <h2 className="sub-head4">guitar</h2>
-          <h2 className="sub-head4">filmmaking</h2>
-          <h2 className="sub-head4">html</h2>
-          <h2 className="sub-head4">sass</h2>
+          <FontAwesomeIcon icon={faReact} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faJs} className="icon" size="4x" />
+          <span className="icon">
+            <img src={nextLogo} alt="Next Logo" style={{ width: '4em' }} />
+          </span>
+          <span className="icon">
+            <img src={mongoLogo} alt="Mongo Logo" style={{ width: '4em' }} />
+          </span>
+          <FontAwesomeIcon icon={faFigma} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faPython} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faJava} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faCopyright} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faAngular} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faGit} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faAdobe} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faGuitar} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faFilm} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faHtml5} className="icon" size="4x" />
+          <FontAwesomeIcon icon={faSass} className="icon" size="4x" />
         </div>
       </div>
     </div>
