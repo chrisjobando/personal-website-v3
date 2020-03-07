@@ -217,6 +217,7 @@
 .djify.expand, .findit.expand {
   height: 225px;
   margin-left: 0;
+  overflow-y: auto;
   
   .description {
     margin-bottom: 15px;
