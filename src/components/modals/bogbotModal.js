@@ -46,7 +46,7 @@ const BogBotModal = ({ onClick }) => {
           </p>
           <div className="link-row">
             <a
-              href="https://github.com/chrisjobando/Bits-of-Good-Bot"
+              href="https://github.com/GTBitsOfGood/bog-slack-bot"
               target="_blank"
               rel="noopener noreferrer"
               className="modal-link"
