@@ -37,6 +37,7 @@ const AboutPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>about.</title>
+        <html lang="en" />
       </Helmet>
       <Header />
       <div className="about-row">

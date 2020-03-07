@@ -38,6 +38,7 @@ const ResumePage = () => (
     <Helmet>
       <meta charSet="utf-8" />
       <title>resume.</title>
+      <html lang="en" />
     </Helmet>
     <Header />
     <div style={{ textAlign: 'center' }}>

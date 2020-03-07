@@ -79,6 +79,7 @@ const IndexPage = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>christopher. obando</title>
+        <html lang="en" />
       </Helmet>
       <Header />
       <section className="row">
