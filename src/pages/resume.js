@@ -41,7 +41,7 @@ const ResumePage = () => (
       <html lang="en" />
     </Helmet>
     <Header />
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ margin: '0 5%', textAlign: 'left' }}>
       <a href={Resume} className="resume-pdf" download>
         see pdf.
       </a>
