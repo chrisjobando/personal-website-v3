@@ -1,0 +1,65 @@
+@import '../colors';
+
+.Header {
+  display: inline;
+  padding: 1px;
+  word-wrap: break-word;
+  position: relative;
+  line-height: 58px;
+}
+
+.Spotify {
+  background: $green;
+}
+
+.Elavon {
+  background: $purple;
+  color: $white;
+}
+
+.Liv2BGirl {
+  background: $blue;
+  color: $white;
+}
+
+.SlackBot {
+  background: $red;
+  color: $white;
+}
+
+.Npp {
+  background: $yellow;
+}
+
+.Content {
+  margin-top: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 3px solid $black;
+
+  h4 {
+    margin-bottom: 10px;
+  }
+
+  .Bold {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .Link {
+    display: flex;
+    text-decoration: none;
+    color: $black;
+
+    h4 {
+      font-weight: bold;
+      margin-right: 15px;
+    }
+
+    &:first-child {
+      h4 {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
