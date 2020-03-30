@@ -57,7 +57,7 @@ const Liv2BGirlPage = () => {
         </a>
         <a
           className={style.Link}
-          href="liv2bgirl.now.sh/"
+          href="https://liv2bgirl.now.sh/"
           rel="noopener noreferrer"
           target="_blank"
         >
