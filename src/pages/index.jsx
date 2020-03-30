@@ -1,6 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+// Google Analytics
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+
 // Social Icons
 import { Icon } from '@iconify/react';
 import githubAlt from '@iconify/icons-fa-brands/github-alt';
@@ -38,38 +41,38 @@ const IndexPage = () => {
           product.
         </h4>
         <div className={home.SocialLinks}>
-          <a
+          <OutboundLink
             href="https://github.com/chrisjobando/"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Github Profile"
           >
             <Icon icon={githubAlt} height="32px" />
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink
             href="https://www.linkedin.com/in/chrisjobando/"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="LinkedIn Profile"
           >
             <Icon icon={linkedinIn} height="32px" />
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink
             href="https://www.instagram.com/chris.obando/"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Instagram Profile"
           >
             <Icon icon={instagramIcon} height="32px" />
-          </a>
-          <a
+          </OutboundLink>
+          <OutboundLink
             href="https://dribbble.com/chrisjobando"
             rel="noopener noreferrer"
             target="_blank"
             aria-label="Dribbble Profile"
           >
             <Icon icon={dribbbleIcon} height="32px" />
-          </a>
+          </OutboundLink>
         </div>
 
         <h1 className={home.WorkHeader}>My Work.</h1>

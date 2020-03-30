@@ -2,6 +2,9 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Moment from 'react-moment';
 
+// Google Analytics
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+
 // Components
 import NavBar from '../components/NavBar';
 
@@ -66,13 +69,13 @@ const ResumePage = () => (
           <div className={style.Item}>
             <h3 className={style.Name}>{project.name}</h3>
             <h4 className={style.Site}>
-              <a
+              <OutboundLink
                 href={project.website}
                 rel="noopener noreferrer"
                 target="_blank"
               >
                 See Code.
-              </a>
+              </OutboundLink>
             </h4>
             <h5 className={style.Year}>
               <Moment date={project.startDate} format="MMM YYYY" /> to{' '}

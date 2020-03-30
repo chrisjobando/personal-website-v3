@@ -1,6 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+// Google Analytics
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+
 // Arrow Icon
 import { Icon } from '@iconify/react';
 import arrowRightThick from '@iconify/icons-mdi/arrow-right-thick';
@@ -45,7 +48,7 @@ const SlackBot = () => {
           one-on-ones.
         </h4>
         <div style={{ height: '30px' }} />
-        <a
+        <OutboundLink
           className={style.Link}
           href="https://github.com/GTBitsOfGood/bog-slack-bot"
           rel="noopener noreferrer"
@@ -53,7 +56,7 @@ const SlackBot = () => {
         >
           <h4>Check out the code</h4>
           <Icon icon={arrowRightThick} width="16px" />
-        </a>
+        </OutboundLink>
       </div>
     </div>
   );

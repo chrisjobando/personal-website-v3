@@ -2,6 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
 
+// Google Analytics
+import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
+
 // Arrow Icon
 import { Icon } from '@iconify/react';
 import arrowRightThick from '@iconify/icons-mdi/arrow-right-thick';
@@ -26,7 +29,16 @@ export default () => {
 
   return (
     <div className={project.ProjectCard}>
-      <Link to="/project/nonprofitportal">
+      <Link
+        to="/project/nonprofitportal"
+        onClick={() => {
+          trackCustomEvent({
+            category: 'NPP Project',
+            action: 'Click',
+            label: 'Checking out NPP Page',
+          });
+        }}
+      >
         <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
           <Img
             className={project.Demo}

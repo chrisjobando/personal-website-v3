@@ -1,6 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+// Google Analytics
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+
 // Arrow Icon
 import { Icon } from '@iconify/react';
 import arrowRightThick from '@iconify/icons-mdi/arrow-right-thick';
@@ -46,7 +49,7 @@ const Liv2BGirlPage = () => {
           custom components for the site.
         </h4>
         <div style={{ height: '30px' }} />
-        <a
+        <OutboundLink
           className={style.Link}
           href="https://github.com/GTBitsOfGood/Liv2BGirl"
           rel="noopener noreferrer"
@@ -54,8 +57,8 @@ const Liv2BGirlPage = () => {
         >
           <h4>Check out the code</h4>
           <Icon icon={arrowRightThick} width="16px" />
-        </a>
-        <a
+        </OutboundLink>
+        <OutboundLink
           className={style.Link}
           href="https://liv2bgirl.now.sh/"
           rel="noopener noreferrer"
@@ -63,7 +66,7 @@ const Liv2BGirlPage = () => {
         >
           <h4>Check out the application</h4>
           <Icon icon={arrowRightThick} width="16px" />
-        </a>
+        </OutboundLink>
       </div>
     </div>
   );

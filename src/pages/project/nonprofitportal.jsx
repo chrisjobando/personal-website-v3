@@ -5,6 +5,9 @@ import { Helmet } from 'react-helmet';
 import { Icon } from '@iconify/react';
 import arrowRightThick from '@iconify/icons-mdi/arrow-right-thick';
 
+// Google Analytics
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+
 // Components
 import NavBar from '../../components/NavBar';
 
@@ -42,7 +45,7 @@ const NonprofitPage = () => {
           making API calls to the database.
         </h4>
         <div style={{ height: '30px' }} />
-        <a
+        <OutboundLink
           className={style.Link}
           href="https://github.com/GTBitsOfGood/bog-npp"
           rel="noopener noreferrer"
@@ -50,8 +53,8 @@ const NonprofitPage = () => {
         >
           <h4>Check out the code</h4>
           <Icon icon={arrowRightThick} width="16px" />
-        </a>
-        <a
+        </OutboundLink>
+        <OutboundLink
           className={style.Link}
           href="https://apply.bitsofgood.org/"
           rel="noopener noreferrer"
@@ -59,7 +62,7 @@ const NonprofitPage = () => {
         >
           <h4>Check out the application</h4>
           <Icon icon={arrowRightThick} width="16px" />
-        </a>
+        </OutboundLink>
       </div>
     </div>
   );

@@ -1,6 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 
+// Google Analytics
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
+
 // Arrow Icon
 import { Icon } from '@iconify/react';
 import arrowRightThick from '@iconify/icons-mdi/arrow-right-thick';
@@ -45,7 +48,7 @@ const SpotifyPage = () => {
         <h4>- recommend songs to users</h4>
         <h4>- export playlists to YouTube</h4>
         <div style={{ height: '30px' }} />
-        <a
+        <OutboundLink
           className={style.Link}
           href="https://github.com/chrisjobando/spotify-nextjs"
           rel="noopener noreferrer"
@@ -53,8 +56,8 @@ const SpotifyPage = () => {
         >
           <h4>Check out the code</h4>
           <Icon icon={arrowRightThick} width="16px" />
-        </a>
-        <a
+        </OutboundLink>
+        <OutboundLink
           className={style.Link}
           href="https://obando-spotify.now.sh/"
           rel="noopener noreferrer"
@@ -62,7 +65,7 @@ const SpotifyPage = () => {
         >
           <h4>Check out the application</h4>
           <Icon icon={arrowRightThick} width="16px" />
-        </a>
+        </OutboundLink>
       </div>
     </div>
   );
