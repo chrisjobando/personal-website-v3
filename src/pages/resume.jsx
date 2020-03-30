@@ -125,9 +125,11 @@ const ResumePage = () => (
             <h3 className={style.Name} style={{ marginBottom: '10px' }}>
               {skill.name}
             </h3>
-            {skill.keywords.map(keyword => (
-              <h4>• {keyword}</h4>
-            ))}
+            <div className={style.Skills}>
+              {skill.keywords.map(keyword => (
+                <h4>• {keyword}</h4>
+              ))}
+            </div>
           </div>
         );
       })}

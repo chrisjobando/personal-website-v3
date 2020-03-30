@@ -25,48 +25,55 @@ const IndexPage = () => {
         <html lang="en" />
       </Helmet>
       <NavBar />
-      <h1 className={home.Header}>Hey, I’m Christopher.</h1>
-      <h4 className={home.Intro}>
-        I’m a software engineer with a passion for social good. My experience in
-        front-end development and UX design allows for me to communicate with
-        both designers and developers from their perspectives.
-      </h4>
-      <h4 className={home.Intro2}>
-        I’m looking for a new opportunity in a multi-disciplinary product team
-        where universal design is the key to delivering an exceptional product.
-      </h4>
-      <div className={home.SocialLinks}>
-        <a
-          href="https://github.com/chrisjobando/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Icon icon={githubAlt} height="32px" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/chrisjobando/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Icon icon={linkedinIn} height="32px" />
-        </a>
-        <a
-          href="https://www.instagram.com/chris.obando/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Icon icon={instagramIcon} height="32px" />
-        </a>
-        <a
-          href="https://dribbble.com/chrisjobando"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Icon icon={dribbbleIcon} height="32px" />
-        </a>
-      </div>
+      <div className={home.PreProject}>
+        <h1 className={home.Header}>Hey, I’m Christopher.</h1>
+        <h4 className={home.Intro}>
+          I’m a software engineer with a passion for social good. My experience
+          in front-end development and UX design allows for me to communicate
+          with both designers and developers from their perspectives.
+        </h4>
+        <h4 className={home.Intro2}>
+          I’m looking for a new opportunity in a multi-disciplinary product team
+          where universal design is the key to delivering an exceptional
+          product.
+        </h4>
+        <div className={home.SocialLinks}>
+          <a
+            href="https://github.com/chrisjobando/"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Github Profile"
+          >
+            <Icon icon={githubAlt} height="32px" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/chrisjobando/"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="LinkedIn Profile"
+          >
+            <Icon icon={linkedinIn} height="32px" />
+          </a>
+          <a
+            href="https://www.instagram.com/chris.obando/"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Instagram Profile"
+          >
+            <Icon icon={instagramIcon} height="32px" />
+          </a>
+          <a
+            href="https://dribbble.com/chrisjobando"
+            rel="noopener noreferrer"
+            target="_blank"
+            aria-label="Dribbble Profile"
+          >
+            <Icon icon={dribbbleIcon} height="32px" />
+          </a>
+        </div>
 
-      <h1 className={home.WorkHeader}>My Work.</h1>
+        <h1 className={home.WorkHeader}>My Work.</h1>
+      </div>
       <Projects />
     </div>
   );

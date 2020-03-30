@@ -10,11 +10,24 @@
   }
 }
 
+.TwoCol {
+  @media (min-width: 1210px) {
+    display: flex;
+
+    .ProjectCard {
+      width: 550px;
+
+      &:last-child {
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
 .ProjectCard {
   display: flex;
   flex-direction: column;
   height: 500px;
-  max-width: 550px;
   box-sizing: border-box;
   border: 3px solid $black;
 
@@ -36,6 +49,36 @@
       width: 100%;
     }
   }
+
+  @media (min-width: 1210px) {
+    background: transparent;
+    color: $black;
+
+    &:hover {
+      .Spotify {
+        background: $green;
+      }
+
+      .Elavon {
+        background: $purple;
+        color: $white;
+      }
+
+      .Liv2BGirl {
+        background: $blue;
+        color: $white;
+      }
+
+      .SlackBot {
+        background: $red;
+        color: $white;
+      }
+
+      .Npp {
+        background: $yellow;
+      }
+    }
+  }
 }
 
 .Spotify,
@@ -51,23 +94,46 @@
 
 .Spotify {
   background: $green;
+
+  @media (min-width: 1210px) {
+    background: transparent;
+  }
 }
 
 .Elavon {
   background: $purple;
   color: $white;
+
+  @media (min-width: 1210px) {
+    background: transparent;
+    color: $black;
+  }
 }
 
 .Liv2BGirl {
   background: $blue;
   color: $white;
+
+  @media (min-width: 1210px) {
+    background: transparent;
+    color: $black;
+  }
 }
 
 .SlackBot {
   background: $red;
   color: $white;
+
+  @media (min-width: 1210px) {
+    background: transparent;
+    color: $black;
+  }
 }
 
 .Npp {
   background: $yellow;
+
+  @media (min-width: 1210px) {
+    background: transparent;
+  }
 }

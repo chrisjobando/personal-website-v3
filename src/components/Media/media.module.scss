@@ -1,7 +1,17 @@
 @import '../../styles/colors';
 
 .Container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .MediaCard {
+    margin: 0 auto;
     margin-bottom: 40px;
 
     &:last-child {
@@ -16,7 +26,7 @@
   height: 500px;
   width: 305px;
   box-sizing: border-box;
-  // border: 3px solid $black;
+  border: 3px solid $black;
 
   .MediaDisplay {
     display: flex;
@@ -85,10 +95,37 @@
 
   .Content {
     margin-top: auto;
-    padding: 0 20px 30px 20px;
+    padding: 20px;
+
+    @media (min-width: 700px) {
+      padding: 10px 20px;
+      border-top: 3px solid $black;
+
+      .Films,
+      .Songs,
+      .Books {
+        background: transparent;
+        color: $black;
+      }
+    }
 
     .Title {
       line-height: 42px;
+    }
+  }
+
+  &:hover {
+    .Films {
+      background: $blue;
+      color: $white;
+    }
+
+    .Books {
+      background: $yellow;
+    }
+
+    .Songs {
+      background: $green;
     }
   }
 }

@@ -33,14 +33,41 @@ export default () => {
   return (
     <>
       <div className={style.Background} />
-      <div className={style.Container}>
-        <div />
-        <Link to="/">
-          <Img fixed={data.file.childImageSharp.fixed} />
+      <div className={style.Container} aria-label="Header">
+        <div className={style.NavMenuLarge}>
+          <div className={style.NavLinkLarge}>
+            <Link
+              to="/"
+              className={style.NavLink}
+              activeClassName={style.ActiveNav}
+            >
+              <h3>WORK</h3>
+            </Link>
+            <Link
+              to="/about"
+              className={style.NavLink}
+              activeClassName={style.ActiveNav}
+            >
+              <h3>ABOUT</h3>
+            </Link>
+            <Link
+              to="/resume"
+              className={style.NavLink}
+              activeClassName={style.ActiveNav}
+            >
+              <h3>RESUME</h3>
+            </Link>
+          </div>
+        </div>
+
+        <Link to="/" className={style.HomeLogo}>
+          <Img fixed={data.file.childImageSharp.fixed} aria-label="Logo" />
         </Link>
+
         <div
           role="button"
           tabIndex={0}
+          className={style.NavMenuSmall}
           onClick={() => toggle(!navOpen)}
           onKeyDown={() => toggle(!navOpen)}
         >

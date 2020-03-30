@@ -23,3 +23,9 @@
 .WorkHeader {
   margin-bottom: 30px;
 }
+
+.PreProject {
+  @media (min-width: 700px) {
+    padding: 0 58px;
+  }
+}

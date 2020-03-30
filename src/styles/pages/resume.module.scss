@@ -1,6 +1,7 @@
 @import '../../styles/colors';
 
 .Header {
+  color: $purple;
   margin: 20px 0;
 }
 
@@ -25,6 +26,13 @@
     .Site {
       a {
         color: $black;
+      }
+    }
+
+    .Skills {
+      column-count: 2;
+      h4 {
+        margin-bottom: 8px;
       }
     }
   }

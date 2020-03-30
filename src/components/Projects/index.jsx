@@ -13,9 +13,13 @@ import project from './project.module.scss';
 export default () => (
   <div className={project.Container}>
     <Spotify />
-    <Elavon />
-    <Liv2BGirl />
-    <SlackBot />
-    <Npp />
+    <div className={project.TwoCol}>
+      <Elavon />
+      <Liv2BGirl />
+    </div>
+    <div className={project.TwoCol}>
+      <SlackBot />
+      <Npp />
+    </div>
   </div>
 );
