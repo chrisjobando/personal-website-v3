@@ -25,7 +25,7 @@ export default () => {
   `);
 
   return (
-    <div className={project.ProjectCard}>
+    <div className={project.ProjectCard} style={{ maxWidth: '1140px' }}>
       <Img className={project.Demo} fixed={data.file.childImageSharp.fixed} />
       <div className={project.Content}>
         <h4>React, Next + Serverless, TypeScript, MongoDB</h4>
