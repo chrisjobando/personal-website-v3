@@ -1,0 +1,154 @@
+@import '../../styles/colors';
+
+.Container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 700px) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .MediaCard {
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.MediaCard {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 305px;
+  box-sizing: border-box;
+  border: 3px solid $black;
+  padding: 10px;
+
+  .MediaDisplay {
+    display: flex;
+    flex-wrap: wrap;
+
+    .One {
+      margin: 35px;
+    }
+
+    .Two {
+      margin-top: 70px;
+    }
+
+    .Three {
+      margin: 0 35px;
+    }
+
+    .Four {
+      margin-top: 35px;
+    }
+  }
+
+  .MediaDisplay2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    .One {
+      margin: 35px;
+      margin-top: 70px;
+    }
+
+    .Two {
+      margin-top: 35px;
+    }
+
+    .Three {
+      margin: 0 35px;
+    }
+
+    .Four {
+      margin-top: -40px;
+    }
+  }
+
+  .MediaDisplay3 {
+    margin: auto 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    .One {
+      margin: 35px;
+    }
+
+    .Two {
+      margin-top: 70px;
+    }
+
+    .Three {
+      margin: 0 35px;
+    }
+
+    .Four {
+      margin-top: 35px;
+    }
+  }
+
+  .Content {
+    margin-top: auto;
+    padding: 20px;
+
+    @media (min-width: 700px) {
+      padding: 10px 20px;
+      border-top: 3px solid $black;
+
+      .Films,
+      .Songs,
+      .Books {
+        background: transparent;
+        color: $black;
+      }
+    }
+
+    .Title {
+      line-height: 42px;
+    }
+  }
+
+  &:hover {
+    .Films {
+      background: $blue;
+      color: $white;
+    }
+
+    .Books {
+      background: $yellow;
+    }
+
+    .Songs {
+      background: $green;
+    }
+  }
+}
+
+.Films,
+.Songs,
+.Books {
+  display: inline;
+  padding: 1px;
+  word-wrap: break-word;
+  position: relative;
+}
+
+.Films {
+  background: $blue;
+  color: $white;
+}
+
+.Books {
+  background: $yellow;
+}
+
+.Songs {
+  background: $green;
+}

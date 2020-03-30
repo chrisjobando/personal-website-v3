@@ -1,0 +1,17 @@
+@import '../colors';
+
+.Header,
+.Intro {
+  margin-bottom: 10px;
+}
+
+.Header2,
+.Intro2 {
+  margin-bottom: 30px;
+}
+
+.PreMedia {
+  @media (min-width: 700px) {
+    padding: 0 58px;
+  }
+}

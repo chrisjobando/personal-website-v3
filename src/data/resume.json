@@ -1,0 +1,170 @@
+{
+  "basics": {
+    "name": "Christopher Obando",
+    "label": "Teaching Assistant at Georgia Institute of Technology",
+    "email": "chrisjobando@gatech.edu",
+    "website": "http://www.chrisjobando.com",
+    "summary": "Hey there!\nCurrently on my third-year as a Computer Science Major at the Georgia Institute of Technology, I have three years of experience of software development in React, Java and Python. I am a results-driven programmer with academic, professional and extracurricular experience in collaborative projects, passionate about accessibility driven design and accustomed to working in fast paced Agile development cycles.\nI am actively looking for a Mobile Application Development Internship or Co-Op starting Fall 2020.",
+    "location": {
+      "city": "Atlanta",
+      "countryCode": "US"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "chrisjobando",
+        "url": "https://www.linkedin.com/in/chrisjobando/"
+      },
+      {
+        "network": "GitHub",
+        "username": "chrisjobando",
+        "url": "https://www.github.com/chrisjobando/"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Georgia Institute of Technology",
+      "area": "Computer Science",
+      "studyType": "Bachelor of Science - BS",
+      "startDate": "2017-08",
+      "endDate": "2021-05",
+      "year": "Third Year"
+    },
+    {
+      "institution": "Universidad Carlos III de Madrid",
+      "area": "Computer Science",
+      "studyType": "Exchange Student",
+      "startDate": "2019-01",
+      "endDate": "2019-06"
+    }
+  ],
+  "work": [
+    {
+      "company": "Georgia Institute of Technology",
+      "position": "Teaching Assistant (CS2261)",
+      "startDate": "2020-01",
+      "summary": "• Collaborated with a team of developers, a project manager, and a designer to streamline the application process for the Bits of Good club at Georgia Tech.\n• Reduced screening time for nonprofits to partner with Bits of Good to pair them with student developers.\n• Gained an understanding of the full MERN stack (MongoDB, Express, React.js, and Node.js) and Next.js.",
+      "website": "https://www.linkedin.com/school/georgia-institute-of-technology/"
+    },
+    {
+      "company": "Elavon, Inc.",
+      "endDate": "2019-12",
+      "position": "Software Developer Intern",
+      "startDate": "2019-08",
+      "summary": "• Reduced security threats detected through Fortify Security Software by implementing safer coding solutions\n• Worked in a diverse Agile/Scrum team of developers and QA  engineers on the Elavon Bridge application\n• Obtained exposure to the Jenkins automation server and used it to build, test and deploy new versions of the software\n• Designed JUnit test cases to detect bugs and fix them\n• Presented all development changes during daily Standup meetings and biweekly Sprint Review meetings",
+      "website": "https://www.linkedin.com/company/elavon-inc/"
+    },
+    {
+      "company": "Georgia Institute of Technology",
+      "endDate": "2018-12",
+      "position": "Computational Services Intern",
+      "startDate": "2018-02",
+      "summary": "• Operated under the Office of Information Technology for the Ivan Allen College of Liberal Arts\nand DILAC VR Lab\n• Provided technical support for professors and students in three separate buildings on campus\n• Diagnosed issues with machines and was dispatched to fix both software and hardware issues",
+      "website": "https://www.linkedin.com/school/georgia-institute-of-technology/"
+    }
+  ],
+  "projects": [
+    {
+      "name": "DJify",
+      "startDate": "2019-11",
+      "endDate": "2019-11",
+      "summary": "• Lead Front-End Development and UI/UX Design for GITMAD Appathon 2019 submission\n• Created an application in React that connects users through the Spotify API to one another for collaborative listening",
+      "website": "https://github.com/DJify"
+    },
+    {
+      "name": "FindIt",
+      "startDate": "2019-10",
+      "endDate": "2019-10",
+      "summary": "• Lead Front-End Development and UI/UX Design for HackGT 2019 submission\n• Created an application in React Native that allows for lookup of nearby stores/restaurants and allows the user to generate a QR code order\n• Intended for those with language barriers or hearing disabilities to order at nearby merchants in-person\n• Worked on merchant-side web QR reader application (built with ReactJS and NextJS) that reads and displays the order depending on their QR entry)",
+      "website": "https://github.com/findit-hackgt2019"
+    },
+    {
+      "name": "UnEat Cafeteria Ordering Application",
+      "startDate": "2019-04",
+      "endDate": "2019-05",
+      "summary": "• Cooperated in a team of five to develop an application that allowed students to order food from the school cafeteria.\n• Programmed in Angular, TypeScript, and SASS to develop an Ionic App.\n• Managed user and order data using the Firebase platform.",
+      "website": "https://github.com/dsi2019/project/tree/master/codigo"
+    }
+  ],
+  "leadership": [
+    {
+      "organization": "GT Bits of Good",
+      "position": "Director Of Community Relations",
+      "website": "https://bitsofgood.org/",
+      "startDate": "2019-12",
+      "summary": "• Planning internal community events, such as socials, mixers, and member retreats\n• Leading committee meetings to create and uphold traditions\n• Building alumni network\n• Serving as public relations for the organization"
+    },
+    {
+      "organization": "GT Bits of Good",
+      "position": "Senior Frontend Web Developer",
+      "website": "https://bitsofgood.org/",
+      "startDate": "2019-08",
+      "summary": "• Working in an agile development cycle to create a nonprofit portal for organizations to connect with Bits of Good\n• Programming client-side web application in React/NextJS.\n• Coordination with the lead designer to implement their vision for the portal's user interface."
+    },
+    {
+      "organization": "Code for Atlanta",
+      "position": "Frontend Developer",
+      "website": "https://www.linkedin.com/company/codeforatlanta/",
+      "startDate": "2019-09",
+      "summary": "• Designing and implementing software solutions for underrepresented groups/nonprofits in Atlanta"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Software Development",
+      "keywords": [
+        "Java",
+        "Python",
+        "Shell Script",
+        "Git",
+        "C",
+        "BitBucket",
+        "VersionOne",
+        "Jenkins",
+        "MATLAB"
+      ]
+    },
+    {
+      "name": "Application Development",
+      "keywords": [
+        "React",
+        "NextJS",
+        "TypeScript",
+        "React Native",
+        "JavaScript",
+        "BabylonJS",
+        "NodeJS",
+        "MongoDB",
+        "Express",
+        "SASS",
+        "Angular",
+        "HTML"
+      ]
+    },
+    {
+      "name": "Design Tools",
+      "keywords": [
+        "Figma",
+        "Sketch",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "POV Ray",
+        "Blender",
+        "Autodesk Maya"
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "keywords": [
+        "Community Service",
+        "Foster Care",
+        "Video Production",
+        "Cinematography",
+        "Adobe Premiere",
+        "Adobe After Effects",
+        "Guitar"
+      ]
+    }
+  ]
+}

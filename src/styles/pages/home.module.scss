@@ -1,0 +1,31 @@
+@import '../colors';
+
+.Header,
+.Intro {
+  margin-bottom: 10px;
+}
+
+.Intro2 {
+  margin-bottom: 42px;
+}
+
+.SocialLinks {
+  display: flex;
+  justify-content: space-between;
+  max-width: 230px;
+  margin-bottom: 40px;
+
+  a {
+    color: $black;
+  }
+}
+
+.WorkHeader {
+  margin-bottom: 30px;
+}
+
+.PreProject {
+  @media (min-width: 700px) {
+    padding: 0 58px;
+  }
+}

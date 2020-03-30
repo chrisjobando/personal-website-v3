@@ -1,0 +1,39 @@
+@import '../../styles/colors';
+
+.Header {
+  color: $purple;
+  margin: 20px 0;
+}
+
+.Container {
+  box-sizing: border-box;
+  padding: 10px;
+  // border: 3px solid $black;
+  white-space: pre-line;
+
+  .Item {
+    margin-bottom: 20px;
+
+    .Major,
+    .Position {
+      font-style: italic;
+    }
+
+    .Year {
+      margin-bottom: 10px;
+    }
+
+    .Site {
+      a {
+        color: $black;
+      }
+    }
+
+    .Skills {
+      column-count: 2;
+      h4 {
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
