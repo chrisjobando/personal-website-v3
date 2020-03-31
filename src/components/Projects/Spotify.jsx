@@ -28,7 +28,7 @@ export default () => {
   `);
 
   return (
-    <div className={project.ProjectCard}>
+    <div className={`${project.ProjectCard} ${project.SpotifyCard}`}>
       <Link
         to="/project/spotify"
         onClick={() => {
@@ -52,7 +52,7 @@ export default () => {
             <h4>Personal Project</h4>
             <div className={project.Next}>
               <h5>Ongoing</h5>
-              <Icon icon={arrowRightThick} width="16px" />
+              <Icon className={project.Arrow} icon={arrowRightThick} />
             </div>
           </div>
         </div>

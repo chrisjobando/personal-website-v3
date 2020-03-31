@@ -28,7 +28,10 @@ export default () => {
   `);
 
   return (
-    <div className={project.ProjectCard} style={{ marginBottom: 0 }}>
+    <div
+      className={`${project.ProjectCard} ${project.NppCard}`}
+      style={{ marginBottom: 0 }}
+    >
       <Link
         to="/project/nonprofitportal"
         onClick={() => {
@@ -52,7 +55,7 @@ export default () => {
             <h4>Senior Frontend Developer</h4>
             <div className={project.Next}>
               <h5>August - December 2019</h5>
-              <Icon icon={arrowRightThick} width="16px" />
+              <Icon icon={arrowRightThick} className={project.Arrow} />
             </div>
           </div>
         </div>

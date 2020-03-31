@@ -51,6 +51,11 @@
       display: flex;
       justify-content: space-between;
       width: 100%;
+
+      .Arrow {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 
@@ -60,27 +65,82 @@
 
     &:hover {
       .Spotify {
+        transition: perspective(1px) translateZ(0);
+        transition-duration: 1s;
         background: $green;
       }
 
       .Elavon {
+        transition: perspective(1px) translateZ(0);
+        transition-duration: 1s;
         background: $purple;
         color: $white;
       }
 
       .Liv2BGirl {
+        transition: perspective(1px) translateZ(0);
+        transition-duration: 1s;
         background: $blue;
         color: $white;
       }
 
       .SlackBot {
+        transition: perspective(1px) translateZ(0);
+        transition-duration: 1s;
         background: $red;
         color: $white;
       }
 
       .Npp {
+        transition: perspective(1px) translateZ(0);
+        transition-duration: 1s;
         background: $yellow;
       }
+    }
+  }
+}
+
+.SpotifyCard {
+  @media (min-width: 1210px) {
+    &:hover {
+      transition: all 0.5s ease-in-out;
+      background: rgba($green, 0.3);
+    }
+  }
+}
+
+.ElavonCard {
+  @media (min-width: 1210px) {
+    &:hover {
+      transition: all 0.5s ease-in-out;
+      background: rgba($purple, 0.3);
+    }
+  }
+}
+
+.Liv2BGirlCard {
+  @media (min-width: 1210px) {
+    &:hover {
+      transition: all 0.5s ease-in-out;
+      background: rgba($blue, 0.3);
+    }
+  }
+}
+
+.SlackbotCard {
+  @media (min-width: 1210px) {
+    &:hover {
+      transition: all 0.5s ease-in-out;
+      background: rgba($red, 0.3);
+    }
+  }
+}
+
+.NppCard {
+  @media (min-width: 1210px) {
+    &:hover {
+      transition: all 0.5s ease-in-out;
+      background: rgba($yellow, 0.3);
     }
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Anime from 'react-anime';
 
 // Google Analytics
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
@@ -24,50 +25,59 @@ const Liv2BGirlPage = () => {
       </Helmet>
       <NavBar />
       <h1 className={`${style.Header} ${style.Liv2BGirl}`}>Liv2BGirl</h1>
-      <div className={style.Content}>
-        <h4>
-          This web application was created using React, Zeit’s Next framework,
-          MongoDB, and SCSS.
-        </h4>
-        <h4>
-          <span style={{ fontWeight: 'bold' }}>Liv2BGirl</span> is a social
-          media website designed for teen girls to have a safe-space to talk-to
-          and get advice from other girls. It has been in early development for
-          a couple of years, so a team of Georgia Tech students decided to take
-          on the project to see it through to completion.
-        </h4>
-        <h4>
-          Our team consists of a project manager, engineering manager, two
-          designers, four frontend developers, and three backend developers.
-        </h4>
-        <h4>
-          I took on the role of{' '}
-          <span style={{ fontWeight: 'bold' }}>Senior Frontend Developer</span>{' '}
-          for the team. My responsibilities include setting up global modules
-          for our team to work with, setting styling standards for the frontend
-          team, doing code review for everyone’s pull requests, and creating
-          custom components for the site.
-        </h4>
-        <div style={{ height: '30px' }} />
-        <OutboundLink
-          className={style.Link}
-          href="https://github.com/GTBitsOfGood/Liv2BGirl"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <h4>Check out the code</h4>
-          <Icon icon={arrowRightThick} width="16px" />
-        </OutboundLink>
-        <OutboundLink
-          className={style.Link}
-          href="https://liv2bgirl.now.sh/"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <h4>Check out the application</h4>
-          <Icon icon={arrowRightThick} width="16px" />
-        </OutboundLink>
-      </div>
+      <Anime
+        opacity={[0, 1]}
+        translateX={['-1em', 0]}
+        delay={(_, i) => i * 500}
+      >
+        <div className={style.Content}>
+          <h4>
+            This web application was created using React, Zeit’s Next framework,
+            MongoDB, and SCSS.
+          </h4>
+          <h4>
+            <span style={{ fontWeight: 'bold' }}>Liv2BGirl</span> is a social
+            media website designed for teen girls to have a safe-space to
+            talk-to and get advice from other girls. It has been in early
+            development for a couple of years, so a team of Georgia Tech
+            students decided to take on the project to see it through to
+            completion.
+          </h4>
+          <h4>
+            Our team consists of a project manager, engineering manager, two
+            designers, four frontend developers, and three backend developers.
+          </h4>
+          <h4>
+            I took on the role of{' '}
+            <span style={{ fontWeight: 'bold' }}>
+              Senior Frontend Developer
+            </span>{' '}
+            for the team. My responsibilities include setting up global modules
+            for our team to work with, setting styling standards for the
+            frontend team, doing code review for everyone’s pull requests, and
+            creating custom components for the site.
+          </h4>
+          <div style={{ height: '30px' }} />
+          <OutboundLink
+            className={style.Link}
+            href="https://github.com/GTBitsOfGood/Liv2BGirl"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <h4>Check out the code</h4>
+            <Icon icon={arrowRightThick} width="16px" />
+          </OutboundLink>
+          <OutboundLink
+            className={style.Link}
+            href="https://liv2bgirl.now.sh/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <h4>Check out the application</h4>
+            <Icon icon={arrowRightThick} width="16px" />
+          </OutboundLink>
+        </div>
+      </Anime>
     </div>
   );
 };
