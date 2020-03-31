@@ -59,7 +59,7 @@ const IndexPage = () => {
                 target="_blank"
                 aria-label="Github Profile"
               >
-                <Icon icon={githubAlt} height="32px" />
+                <Icon className={home.Link} icon={githubAlt} height="32px" />
               </OutboundLink>
               <OutboundLink
                 href="https://www.linkedin.com/in/chrisjobando/"
@@ -67,7 +67,7 @@ const IndexPage = () => {
                 target="_blank"
                 aria-label="LinkedIn Profile"
               >
-                <Icon icon={linkedinIn} height="32px" />
+                <Icon className={home.Link} icon={linkedinIn} height="32px" />
               </OutboundLink>
               <OutboundLink
                 href="https://www.instagram.com/chris.obando/"
@@ -75,7 +75,11 @@ const IndexPage = () => {
                 target="_blank"
                 aria-label="Instagram Profile"
               >
-                <Icon icon={instagramIcon} height="32px" />
+                <Icon
+                  className={home.Link}
+                  icon={instagramIcon}
+                  height="32px"
+                />
               </OutboundLink>
               <OutboundLink
                 href="https://dribbble.com/chrisjobando"
@@ -83,7 +87,7 @@ const IndexPage = () => {
                 target="_blank"
                 aria-label="Dribbble Profile"
               >
-                <Icon icon={dribbbleIcon} height="32px" />
+                <Icon className={home.Link} icon={dribbbleIcon} height="32px" />
               </OutboundLink>
             </Anime>
           </div>
