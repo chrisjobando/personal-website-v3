@@ -48,7 +48,7 @@ export default () => {
   `);
 
   return (
-    <div className={media.MediaCard}>
+    <div className={media.MediaCard} style={{ marginBottom: 0 }}>
       <div className={media.MediaDisplay3}>
         <Img className={media.One} fixed={data.image1.childImageSharp.fixed} />
         <Img className={media.Two} fixed={data.image2.childImageSharp.fixed} />

@@ -1,4 +1,5 @@
 import React from 'react';
+import Anime from 'react-anime';
 
 // Projects
 import Spotify from './Spotify';
@@ -12,14 +13,20 @@ import project from './project.module.scss';
 
 export default () => (
   <div className={project.Container}>
-    <Spotify />
-    <div className={project.TwoCol}>
-      <Elavon />
-      <Liv2BGirl />
-    </div>
-    <div className={project.TwoCol}>
-      <SlackBot />
-      <Npp />
-    </div>
+    <Anime
+      opacity={[0, 1]}
+      translateX={['-1em', 0]}
+      delay={(_, i) => i * 300 + 500}
+    >
+      <Spotify />
+      <div className={project.TwoCol}>
+        <Elavon />
+        <Liv2BGirl />
+      </div>
+      <div className={project.TwoCol}>
+        <SlackBot />
+        <Npp />
+      </div>
+    </Anime>
   </div>
 );

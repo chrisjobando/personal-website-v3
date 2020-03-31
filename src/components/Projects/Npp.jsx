@@ -28,7 +28,7 @@ export default () => {
   `);
 
   return (
-    <div className={project.ProjectCard}>
+    <div className={project.ProjectCard} style={{ marginBottom: 0 }}>
       <Link
         to="/project/nonprofitportal"
         onClick={() => {

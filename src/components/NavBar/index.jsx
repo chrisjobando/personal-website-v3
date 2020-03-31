@@ -61,7 +61,12 @@ export default () => {
         </div>
 
         <Link to="/" className={style.HomeLogo}>
-          <Img fixed={data.file.childImageSharp.fixed} aria-label="Logo" />
+          <Img
+            fixed={data.file.childImageSharp.fixed}
+            aria-label="Logo"
+            loading="eager"
+            fadeIn={false}
+          />
         </Link>
 
         <div

@@ -1,4 +1,5 @@
 import React from 'react';
+import Anime from 'react-anime';
 
 // Media
 import Films from './Films';
@@ -10,8 +11,14 @@ import media from './media.module.scss';
 
 export default () => (
   <div className={media.Container}>
-    <Films />
-    <Books />
-    <Songs />
+    <Anime
+      delay={(e, i) => i * 50 + 500}
+      opacity={[0, 1]}
+      translateX={['-2em', 0]}
+    >
+      <Films />
+      <Books />
+      <Songs />
+    </Anime>
   </div>
 );
