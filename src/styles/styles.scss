@@ -9,6 +9,7 @@ body {
   -o-box-sizing: border-box;
   -ms-box-sizing: border-box;
   color: $black;
+  cursor: url('/cursor.svg'), auto;
 }
 
 html {
@@ -74,4 +75,8 @@ body {
 
 a {
   outline: none;
+
+  &:hover {
+    cursor: url('/click.svg'), auto;
+  }
 }
