@@ -71,6 +71,10 @@ body {
   max-width: 1210px;
   margin: 0 auto;
   padding: 100px 35px 35px 35px;
+
+  @media (min-width: 700px) {
+    padding-top: 130px;
+  }
 }
 
 a {

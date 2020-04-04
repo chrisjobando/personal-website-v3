@@ -5,10 +5,6 @@ import Img from 'gatsby-image';
 // Google Analytics
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 
-// Arrow Icon
-import { Icon } from '@iconify/react';
-import arrowRightThick from '@iconify/icons-mdi/arrow-right-thick';
-
 // Styling
 import project from './project.module.scss';
 
@@ -53,10 +49,7 @@ export default () => {
               <span className={project.Npp}>Nonprofit Portal</span>
             </h2>
             <h4>Senior Frontend Developer</h4>
-            <div className={project.Next}>
-              <h5>August - December 2019</h5>
-              <Icon icon={arrowRightThick} className={project.Arrow} />
-            </div>
+            <h5>August - December 2019</h5>
           </div>
         </div>
       </Link>

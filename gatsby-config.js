@@ -43,5 +43,12 @@ module.exports = {
         pageTransitionDelay: 0,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        start_url: '/',
+        icon: 'src/images/fi.png',
+      },
+    },
   ],
 };

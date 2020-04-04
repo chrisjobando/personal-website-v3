@@ -1,17 +1,37 @@
 @import '../colors';
 
-.Header,
 .Intro {
   margin-bottom: 10px;
 }
 
-.Header2,
-.Intro2 {
+.Header2 {
   margin-bottom: 30px;
 }
 
-.PreMedia {
+.Intro2 {
+  margin-bottom: 40px;
+}
+
+.IntroHead {
+  display: flex;
+  flex-direction: column-reverse;
+
+  .Pic {
+    margin: 30px auto;
+    min-width: 300px;
+  }
+
   @media (min-width: 700px) {
-    padding: 0 58px;
+    margin-top: 10px;
+
+    flex-direction: row;
+    .Intro,
+    .Intro2 {
+      margin-right: 30px;
+    }
+
+    .Pic {
+      margin: 0 auto;
+    }
   }
 }

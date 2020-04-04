@@ -28,13 +28,15 @@
   .MediaDisplay {
     display: flex;
     flex-wrap: wrap;
+    margin: auto 0;
 
     .One {
       margin: 35px;
+      margin-top: 0;
     }
 
     .Two {
-      margin-top: 70px;
+      margin-top: 35px;
     }
 
     .Three {
@@ -49,14 +51,10 @@
   .MediaDisplay2 {
     display: flex;
     flex-wrap: wrap;
+    margin: auto 0;
 
     .One {
       margin: 35px;
-      margin-top: 70px;
-    }
-
-    .Two {
-      margin-top: 35px;
     }
 
     .Three {
@@ -108,21 +106,6 @@
 
     .Title {
       line-height: 42px;
-    }
-  }
-
-  &:hover {
-    .Films {
-      background: $blue;
-      color: $white;
-    }
-
-    .Books {
-      background: $yellow;
-    }
-
-    .Songs {
-      background: $green;
     }
   }
 }

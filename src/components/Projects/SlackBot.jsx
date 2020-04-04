@@ -5,10 +5,6 @@ import Img from 'gatsby-image';
 // Google Analytics
 import { trackCustomEvent } from 'gatsby-plugin-google-analytics';
 
-// Arrow Icon
-import { Icon } from '@iconify/react';
-import arrowRightThick from '@iconify/icons-mdi/arrow-right-thick';
-
 // Styling
 import project from './project.module.scss';
 
@@ -50,10 +46,7 @@ export default () => {
               <span className={project.SlackBot}>Slack Member Tracker Bot</span>
             </h2>
             <h4>Personal Project</h4>
-            <div className={project.Next}>
-              <h5>Ongoing</h5>
-              <Icon icon={arrowRightThick} className={project.Arrow} />
-            </div>
+            <h5>Ongoing</h5>
           </div>
         </div>
       </Link>

@@ -42,7 +42,7 @@ const ResumePage = () => (
         })}
       </div>
 
-      <h1 className={style.Header}>Work.</h1>
+      <h1 className={style.Header}>Experience.</h1>
       <div className={style.Container}>
         {work.map(job => {
           return (

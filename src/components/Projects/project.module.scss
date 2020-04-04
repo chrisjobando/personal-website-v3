@@ -46,57 +46,45 @@
       margin: 16px 0;
       line-height: 42px;
     }
-
-    .Next {
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-
-      .Arrow {
-        width: 24px;
-        height: 24px;
-      }
-    }
   }
 
   @media (min-width: 1210px) {
     background: transparent;
     color: $black;
 
-    &:hover {
-      .Spotify {
-        transition: perspective(1px) translateZ(0);
-        transition-duration: 1s;
-        background: $green;
-      }
+    // &:hover {
+    //   .Spotify {
+    //     transition: perspective(1px) translateZ(0);
+    //     transition-duration: 1s;
+    //     background: $green;
+    //   }
 
-      .Elavon {
-        transition: perspective(1px) translateZ(0);
-        transition-duration: 1s;
-        background: $purple;
-        color: $white;
-      }
+    //   .Elavon {
+    //     transition: perspective(1px) translateZ(0);
+    //     transition-duration: 1s;
+    //     background: $purple;
+    //     color: $white;
+    //   }
 
-      .Liv2BGirl {
-        transition: perspective(1px) translateZ(0);
-        transition-duration: 1s;
-        background: $blue;
-        color: $white;
-      }
+    //   .Liv2BGirl {
+    //     transition: perspective(1px) translateZ(0);
+    //     transition-duration: 1s;
+    //     background: $blue;
+    //   }
 
-      .SlackBot {
-        transition: perspective(1px) translateZ(0);
-        transition-duration: 1s;
-        background: $red;
-        color: $white;
-      }
+    //   .SlackBot {
+    //     transition: perspective(1px) translateZ(0);
+    //     transition-duration: 1s;
+    //     background: $red;
+    //     color: $white;
+    //   }
 
-      .Npp {
-        transition: perspective(1px) translateZ(0);
-        transition-duration: 1s;
-        background: $yellow;
-      }
-    }
+    //   .Npp {
+    //     transition: perspective(1px) translateZ(0);
+    //     transition-duration: 1s;
+    //     background: $yellow;
+    //   }
+    // }
   }
 }
 
@@ -145,59 +133,58 @@
   }
 }
 
-.Spotify,
-.Elavon,
-.Liv2BGirl,
-.SlackBot,
-.Npp {
-  display: inline;
-  padding: 1px;
-  word-wrap: break-word;
-  position: relative;
-}
+// .Spotify,
+// .Elavon,
+// .Liv2BGirl,
+// .SlackBot,
+// .Npp {
+//   display: inline;
+//   padding: 1px;
+//   word-wrap: break-word;
+//   position: relative;
+// }
 
-.Spotify {
-  background: $green;
+// .Spotify {
+//   background: $green;
 
-  @media (min-width: 1210px) {
-    background: transparent;
-  }
-}
+//   @media (min-width: 1210px) {
+//     background: transparent;
+//   }
+// }
 
-.Elavon {
-  background: $purple;
-  color: $white;
+// .Elavon {
+//   background: $purple;
+//   color: $white;
 
-  @media (min-width: 1210px) {
-    background: transparent;
-    color: $black;
-  }
-}
+//   @media (min-width: 1210px) {
+//     background: transparent;
+//     color: $black;
+//   }
+// }
 
-.Liv2BGirl {
-  background: $blue;
-  color: $white;
+// .Liv2BGirl {
+//   background: $blue;
 
-  @media (min-width: 1210px) {
-    background: transparent;
-    color: $black;
-  }
-}
+//   @media (min-width: 1210px) {
+//     background: transparent;
+//     color: $black;
+//   }
+// }
 
-.SlackBot {
-  background: $red;
-  color: $white;
+// .SlackBot {
+//   background: $red;
+//   color: $white;
 
-  @media (min-width: 1210px) {
-    background: transparent;
-    color: $black;
-  }
-}
+//   @media (min-width: 1210px) {
+//     background: transparent;
+//     color: $black;
+//   }
+// }
 
-.Npp {
-  background: $yellow;
+// .Npp {
+//   background: $yellow;
 
-  @media (min-width: 1210px) {
-    background: transparent;
-  }
-}
+//   @media (min-width: 1210px) {
+//     background: transparent;
+//   }
+// }

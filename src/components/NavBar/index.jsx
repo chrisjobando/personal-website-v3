@@ -37,11 +37,11 @@ export default () => {
         <div className={style.NavMenuLarge}>
           <div className={style.NavLinkLarge}>
             <Link
-              to="/"
+              to="/projects"
               className={style.NavLink}
               activeClassName={style.ActiveNav}
             >
-              <h3>WORK</h3>
+              <h3>PROJECTS</h3>
             </Link>
             <Link
               to="/about"
