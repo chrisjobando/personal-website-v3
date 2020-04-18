@@ -130,7 +130,6 @@
     }
 
     .Feature {
-      width: 512px;
       max-width: 512px;
       display: flex;
       flex-direction: column;
@@ -139,6 +138,11 @@
 
       p {
         margin-bottom: 20px;
+      }
+
+      @media (max-width: 1140px) {
+        max-width: 100%;
+        margin: 0;
       }
     }
   }
@@ -170,9 +174,11 @@
 }
 
 .Elavon {
+  background: $blue;
 }
 
 .Liv2BGirl {
+  background: $yellow;
 }
 
 .SlackBot {

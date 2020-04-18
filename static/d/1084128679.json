@@ -1,0 +1,15 @@
+{
+  "data": {
+    "file": {
+      "childImageSharp": {
+        "fixed": {
+          "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAACGElEQVQ4y62S38tZcRzHvzjMzWh/wloow67IhZriYrijXLigRFyI/4BiuWBKmpSVC81o95ayaDeaXbjgxgq7kB8XhAsenHOes+/n7DlPa0+x1d717bw/5/3t9f31Qeg36fV6pNVqWa/T6ZBarUYEQbC1XC5H/yyz2Xzva7UafzKZCMLhMBEMBolKpULU63UeZP1+HwUCAfRfNJ/P/36yyWTiLD+ZTL7J5XKfbDbbBzxK8Xi8WCqVXkBYLpd5RqPxOtBgMPDu7JNisbhlsMbjMTMYDMAyvV7vPYTY8jOZzHWgTCaDySw0nU5/Y37peD6fj2BGo9HXOyCv0+lcB2IIajabfPCxWOzjYrFgttstudvtaJIkmeVyOcXRY8gjkQhyu92XgRaLBUWjURbo8Xher9dr2BhJUdQtmM1mc8ALPYe8UCjwcQdcBkokEuT3+wXgrVarezgcssDj8QhACnaJW+cV5K1WS4D/XT+21+tld4hf8WWj0WBusfb7PQBJoLfb7RDkeBGB3W6/DFOpVMjhcHAv/axare4AcjqdaHxsFtjtdt9yL51KpS4DlUol0mg0XCnK5/M/OODNzQ0FHrfQZw6I/UOISCRCYrEYSaVStna5XPetk0gkvsC94VNTIABOp9PvOHoEudPpfAgUCoXsV6FQoNlsBjCEe4wFhkKhd/j+GJqmycPhQANwtVptfD7fU8iz2SzvT95P7ihBcHFLyaYAAAAASUVORK5CYII=",
+          "width": 296,
+          "height": 207,
+          "src": "/static/f00a334c02644ad6f52d9dda46deb5b8/fd765/Liv2BGirlDemo.png",
+          "srcSet": "/static/f00a334c02644ad6f52d9dda46deb5b8/fd765/Liv2BGirlDemo.png 1x"
+        }
+      }
+    }
+  }
+}

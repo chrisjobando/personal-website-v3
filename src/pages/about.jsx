@@ -43,21 +43,21 @@ const AboutPage = () => {
         <h1 className={about.Header}>Hey, I’m Christopher.</h1>
         <div className={about.IntroHead}>
           <div>
-            <h4 className={about.Intro}>
+            <p className={about.Intro}>
               Currently based in Atlanta, I am a third-year Computer Science
               student at the Georgia Institute of Technology, with a
               concentration in People and Media.
-            </h4>
-            <h4 className={about.Intro}>
+            </p>
+            <p className={about.Intro}>
               I also completed a Film and Media studies minor, and have previous
               experience with user interface design coursework apart from
               major-related courses.
-            </h4>
-            <h4 className={about.Intro2}>
+            </p>
+            <p className={about.Intro2}>
               Outside of the classroom, I am passionate about mental health
               awareness on campus, accessible design practices, and working with
               nonprofits in Atlanta.
-            </h4>
+            </p>
           </div>
           <Img className={about.Pic} fixed={data.file.childImageSharp.fixed} />
         </div>

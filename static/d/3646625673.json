@@ -1,0 +1,15 @@
+{
+  "data": {
+    "file": {
+      "childImageSharp": {
+        "fixed": {
+          "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAAAsSAAALEgHS3X78AAAAnUlEQVQI12M42GPJwgAErs5rXH18128KDtt0OSBowxE3t3XlDAz/mUByJyaaMnXnFYDZLk5reTw91vUHhW66HBa1+Zqf/4ajbq5rQ0FypyYaMINoBjfX9clRCVvetM87sX7hocuTJ224NK+4asPdc9OMNv7/zwAH8jrn2X391h/Ordp7be7eS9MWH7s6oXf56eXRiVvfu7mtzwOpAQDUcEBC5SFFWQAAAABJRU5ErkJggg==",
+          "width": 300,
+          "height": 32,
+          "src": "/static/9bdc94239cd611d3b904252a04d8691a/056e3/logo.png",
+          "srcSet": "/static/9bdc94239cd611d3b904252a04d8691a/056e3/logo.png 1x"
+        }
+      }
+    }
+  }
+}

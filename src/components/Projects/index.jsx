@@ -11,11 +11,7 @@ import project from './project.module.scss';
 
 export default () => (
   <div className={project.Container}>
-    <Anime
-      opacity={[0, 1]}
-      translateX={['-1em', 0]}
-      delay={(_, i) => i * 300 + 500}
-    >
+    <Anime opacity={[0, 1]} translateX={['-1em', 0]} delay={(_, i) => i * 100}>
       <Spotify />
       <div className={project.TwoCol}>
         <Elavon />

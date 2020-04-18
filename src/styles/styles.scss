@@ -25,6 +25,7 @@ h5,
 h6,
 p {
   margin: 0;
+  line-height: 140%;
 }
 
 h1,
@@ -34,18 +35,15 @@ h3 {
 }
 
 h1 {
-  font-size: 48px;
-  line-height: 68px;
+  font-size: 2.5em;
 }
 
 h2 {
-  font-size: 34px;
-  line-height: 48px;
+  font-size: 2.25em;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 1.5em;
 }
 
 h4,
@@ -56,39 +54,35 @@ p {
 }
 
 h4 {
-  font-size: 28px;
-  line-height: 40px;
+  font-size: 1.15em;
 }
 
 h5 {
-  font-size: 22px;
-  line-height: 31px;
+  font-size: 1.15em;
   font-weight: normal;
 }
 
 h6 {
-  font-size: 22px;
-  line-height: 31px;
+  font-size: 1em;
 }
 
 p {
-  font-size: 24px;
-  line-height: 34px;
+  font-size: 1.5em;
 }
 
 body {
   min-width: 375px;
-  max-width: 1210px;
+  max-width: 1240px;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 130px 30px 80px 30px;
+  padding: 130px 50px 80px 50px;
 
   @media (min-width: 700px) {
     padding-top: 192px;
   }
 
   @media (min-width: 1210px) {
-    width: 1140px;
+    width: 1240px;
   }
 }
 

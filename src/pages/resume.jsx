@@ -31,7 +31,7 @@ const ResumePage = () => (
         {education.map(school => {
           return (
             <div className={style.Item}>
-              <h3 className={style.Name}>{school.institution}</h3>
+              <h2 className={style.Name}>{school.institution}</h2>
               <h4 className={style.Major}>{school.studyType}</h4>
               <h5 className={style.Year}>
                 <Moment date={school.startDate} format="MMM YYYY" /> to{' '}
@@ -47,7 +47,7 @@ const ResumePage = () => (
         {work.map(job => {
           return (
             <div className={style.Item}>
-              <h3 className={style.Name}>{job.company}</h3>
+              <h2 className={style.Name}>{job.company}</h2>
               <h4 className={style.Position}>{job.position}</h4>
               <h5 className={style.Year}>
                 <Moment date={job.startDate} format="MMM YYYY" /> to{' '}
@@ -57,7 +57,7 @@ const ResumePage = () => (
                   'Present'
                 )}
               </h5>
-              <h4 className={style.Summary}>{job.summary}</h4>
+              <p className={style.Summary}>{job.summary}</p>
             </div>
           );
         })}
@@ -68,7 +68,7 @@ const ResumePage = () => (
         {projects.map(project => {
           return (
             <div className={style.Item}>
-              <h3 className={style.Name}>{project.name}</h3>
+              <h2 className={style.Name}>{project.name}</h2>
               <h4 className={style.Site}>
                 <OutboundLink
                   href={project.website}
@@ -86,7 +86,7 @@ const ResumePage = () => (
                   'Present'
                 )}
               </h5>
-              <h4 className={style.Summary}>{project.summary}</h4>
+              <p className={style.Summary}>{project.summary}</p>
             </div>
           );
         })}
@@ -97,7 +97,7 @@ const ResumePage = () => (
         {leadership.map(activity => {
           return (
             <div className={style.Item}>
-              <h3 className={`${style.Name} ${style.Site}`}>
+              <h2 className={`${style.Name} ${style.Site}`}>
                 <a
                   href={activity.website}
                   rel="noopener noreferrer"
@@ -105,7 +105,7 @@ const ResumePage = () => (
                 >
                   {activity.organization}
                 </a>
-              </h3>
+              </h2>
               <h4 className={style.Position}>{activity.position}</h4>
               <h5 className={style.Year}>
                 <Moment date={activity.startDate} format="MMM YYYY" /> to{' '}
@@ -115,7 +115,7 @@ const ResumePage = () => (
                   'Present'
                 )}
               </h5>
-              <h4 className={style.Summary}>{activity.summary}</h4>
+              <p className={style.Summary}>{activity.summary}</p>
             </div>
           );
         })}
@@ -131,7 +131,7 @@ const ResumePage = () => (
               </h3>
               <div className={style.Skills}>
                 {skill.keywords.map(keyword => (
-                  <h4>• {keyword}</h4>
+                  <p>• {keyword}</p>
                 ))}
               </div>
             </div>

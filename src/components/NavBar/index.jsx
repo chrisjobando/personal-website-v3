@@ -42,13 +42,13 @@ export default () => {
             >
               <h3>WORK</h3>
             </Link>
-            <Link
+            {/* <Link
               to="/projects"
               className={style.NavLink}
               activeClassName={style.ActiveNav}
             >
               <h3>PROJECTS</h3>
-            </Link>
+            </Link> */}
             <Link
               to="/about"
               className={style.NavLink}

@@ -1,0 +1,15 @@
+{
+  "data": {
+    "file": {
+      "childImageSharp": {
+        "fixed": {
+          "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAADnklEQVQ4y42TS28bVRTHPTOe8au2Y9M6duTETvA7EJJCHD/G2DPj8bzs8SPjR5I2jwaroYRmESmrLCIhFpHyQfgACAQCFmFXvgCioSwqEF2ypIm53HtJjatC0isdnTN3/vOb878Pk2lkRCIRE8/zuM5ksyaWLRAsyxKFQmEYuVwOv4fzpmuHqqo453PZ/9X8/PhzUyicxvXe3t710AKbG9YBn/fGzHTYni8WHZwoOPyBkOPFuzejmethpVIJZ6+TphRV+0xRq79xHHdWYNknuWzuTFWlZ7Wa9AnS6DWO3N3dvRqoKAqBcrFQHG8Zxh/rG5tgdW0dqM0OqNQ7oNlZBZIkP0Iat+cN4uDg4GqgrusY+F4mf3N9be3Xrc0toDeMC63RHih667ms6UAoV75FGsbmIo6Ojq4G1ut1DLy9yPq2tzae7dzvg3ZvbVAzVkDL6FyoWg2IFen0Uk6cnJy8HrCua7dqeuN3vbEMOEEccHwZ8IJ4IYgykGRlCDw+Pr4aqGkaBt4KRr0f7fSfPvz4AWga3YHa6gKh2jrXag1QkeRvkKZaa5LFYvHac4iBU5HU2MbdO7/0P9gGjeXOQK0boKw2zhW1BmRZ/Rpp0kt58vDw8PU2Ze521n33zuqTe/c2wbLRG1SXe0Cqt3GHEPgVPmJcmdrf3/9vEEmSL3XIvp93NRuts3a7B/hyBa9hiS+flysK2pQvkUasKBTDMC99jwdFUcO62+1ioNUTdO70tx8/3H0AWu2VgdrsAqVaP1fwsRExsMSL1GhTBEH8++ByuXCenp7Gv/JNRjzbm+s/fbhzH2+K3Gj/JSg6XkNBrHyBl+WdedQepvh8vlfsElarlUomk4zdbmPeenve324bP/ZWVkC9aTyHN+VC0lt/yqoGypfAZCrlCIVCNHRI/tMgMQSiivT7/ebZ2VmL1eawLr67ECxxwlMZdiRKCrodECQBZJnjhe+QPhqLOVEDTqcTWSeJEc8YiCIQCJjj8bjF7XLZ0+mlTzPZ3A+L6aXTxaXM95ls/hQ+P5pfWOhDrTmVSlk9Hg91+S3xwv4QSNM0FY1G6ampKQuMG3AOxU2GpsYZ2jwOaxReC0Mjq45wOMzAMKN9HYEOzZM2m42am5uj4cZYJiYm7JFo1JVIJMdi8bgnFot544mEJ5FMjs3MzLigExucsyQSCfoV4Khlt9tNQSs0FDOo02AwaLsMO8qTk5M22B0CMdCN2W63j64fBv4NmQv5VfebTIkAAAAASUVORK5CYII=",
+          "width": 298,
+          "height": 298,
+          "src": "/static/2c6a34e52d2c4fbb4aae0b94556ae168/30388/SlackBotDemo.png",
+          "srcSet": "/static/2c6a34e52d2c4fbb4aae0b94556ae168/30388/SlackBotDemo.png 1x"
+        }
+      }
+    }
+  }
+}
