@@ -11,7 +11,6 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-remove-trailing-slashes`,
     'gatsby-plugin-eslint',
-    'gatsby-plugin-smoothscroll',
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
