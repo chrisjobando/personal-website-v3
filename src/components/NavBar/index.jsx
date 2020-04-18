@@ -22,7 +22,7 @@ export default () => {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
-          fixed(width: 82, height: 32) {
+          fixed(width: 135, height: 55) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -32,10 +32,16 @@ export default () => {
 
   return (
     <>
-      <div className={style.Background} />
       <div className={style.Container} aria-label="Header">
         <div className={style.NavMenuLarge}>
           <div className={style.NavLinkLarge}>
+            <Link
+              to="/"
+              className={style.NavLink}
+              activeClassName={style.ActiveNav}
+            >
+              <h3>WORK</h3>
+            </Link>
             <Link
               to="/projects"
               className={style.NavLink}

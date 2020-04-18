@@ -18,8 +18,8 @@ export default () => (
     >
       <Spotify />
       <div className={project.TwoCol}>
-        <Liv2BGirl />
         <Elavon />
+        <Liv2BGirl />
       </div>
     </Anime>
   </div>

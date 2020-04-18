@@ -11,11 +11,21 @@ import project from './project.module.scss';
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "SpotifyDemo.png" }) {
+      large: file(relativePath: { eq: "Spotify-Demo.png" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
-          fixed(width: 300, height: 270) {
+          fixed(width: 670, height: 400) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
+      small: file(relativePath: { eq: "Spotify-Demo-Small.png" }) {
+        childImageSharp {
+          # Specify the image processing specifications right in the query.
+          # Makes it trivial to update as your page's design changes.
+          fixed(width: 108, height: 200) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -24,9 +34,9 @@ export default () => {
   `);
 
   return (
-    <div className={`${project.ProjectCard} ${project.SpotifyCard}`}>
+    <div className={`${project.SpotifyCard} ${project.ProjectCard}`}>
       <Link
-        to="/project/spotify"
+        to="/project/musicmatch"
         onClick={() => {
           trackCustomEvent({
             category: 'Spotify Project',
@@ -35,19 +45,22 @@ export default () => {
           });
         }}
       >
-        <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-          <Img
-            className={project.Demo}
-            fixed={data.file.childImageSharp.fixed}
-          />
-          <div className={project.Content}>
-            <h4>React, Next + Serverless, TypeScript, MongoDB</h4>
-            <h2 className={project.Title}>
-              <span className={project.Spotify}>Spotify Web Application</span>
-            </h2>
-            <h4>Personal Project</h4>
-            <h5>Ongoing</h5>
-          </div>
+        <Img
+          className={project.Demo}
+          fixed={data.large.childImageSharp.fixed}
+        />
+
+        <Img
+          className={project.Demo2}
+          fixed={data.small.childImageSharp.fixed}
+        />
+        <div className={project.Content}>
+          <h5>React, Next, TypeScript, MongoDB</h5>
+          <h2 className={project.Title}>
+            <span className={project.Spotify}>MusicMatch</span>
+          </h2>
+          <h6>Personal Project</h6>
+          <h5>Ongoing</h5>
         </div>
       </Link>
     </div>

@@ -17,7 +17,7 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Karla`,
+            family: `Poppins`,
             variants: [`400`, `700`],
           },
           {

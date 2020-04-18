@@ -11,11 +11,11 @@ import project from './project.module.scss';
 export default () => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: { eq: "ElavonDemo.png" }) {
+      file(relativePath: { eq: "Elavon-Demo.png" }) {
         childImageSharp {
           # Specify the image processing specifications right in the query.
           # Makes it trivial to update as your page's design changes.
-          fixed(width: 140, height: 210) {
+          fixed(width: 107, height: 200) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -35,19 +35,14 @@ export default () => {
           });
         }}
       >
-        <div style={{ display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
-          <Img
-            className={project.Demo}
-            fixed={data.file.childImageSharp.fixed}
-          />
-          <div className={project.Content}>
-            <h4>Java, Spring, Micronaut</h4>
-            <h2 className={project.Title}>
-              <span className={project.Elavon}>Elavon Internship</span>
-            </h2>
-            <h4>Backend Developer</h4>
-            <h5>August - December 2019</h5>
-          </div>
+        <Img className={project.Demo} fixed={data.file.childImageSharp.fixed} />
+        <div className={project.Content}>
+          <h5>Java, Spring, Micronaut</h5>
+          <h2 className={project.Title}>
+            <span className={project.Elavon}>Elavon</span>
+          </h2>
+          <h6>Backend Development Internship</h6>
+          <h5>August - December 2019</h5>
         </div>
       </Link>
     </div>

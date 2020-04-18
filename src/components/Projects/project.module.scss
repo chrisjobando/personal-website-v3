@@ -2,7 +2,102 @@
 
 .Container {
   .ProjectCard {
+    height: 500px;
+    box-sizing: border-box;
+    padding: 50px;
     margin-bottom: 40px;
+    display: flex;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      .Content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .Title {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+
+  .ElavonCard,
+  .Liv2BGirlCard {
+    .Demo {
+      margin: 0 auto;
+    }
+
+    .Content {
+      margin-top: auto;
+    }
+  }
+
+  .SpotifyCard {
+    background: $purple;
+  }
+
+  .ElavonCard {
+    background: $blue;
+  }
+
+  .Liv2BGirlCard {
+    background: $yellow;
+  }
+}
+
+@media (max-width: 1200px) {
+  .SpotifyCard {
+    .Demo {
+      display: none !important;
+    }
+
+    .Demo2 {
+      margin: 0 auto;
+    }
+
+    .Content {
+      margin-top: auto;
+    }
+  }
+}
+
+@media (min-width: 1201px) {
+  .SpotifyCard {
+    .Demo {
+      margin: 0;
+      margin-right: 50px;
+    }
+
+    .Demo2 {
+      display: none !important;
+    }
+
+    a {
+      flex-direction: row !important;
+    }
+
+    .Content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .Container {
+    .ProjectCard {
+      padding: 20px;
+
+      .Demo,
+      .Demo2 {
+        margin: auto;
+      }
+    }
   }
 }
 
@@ -18,173 +113,8 @@
       }
     }
   }
-}
 
-.ProjectCard {
-  height: 500px;
-  box-sizing: border-box;
-  border: 3px solid $black;
-  display: flex;
-  flex-direction: column;
-
-  a {
-    text-decoration: none;
-    color: $black;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-
-  .Demo {
-    margin: auto;
-  }
-
-  .Content {
-    padding: 0 20px 30px 20px;
-
-    .Title {
-      margin: 16px 0;
-      line-height: 42px;
-    }
-  }
-
-  @media (min-width: 1210px) {
-    background: transparent;
-    color: $black;
-
-    // &:hover {
-    //   .Spotify {
-    //     transition: perspective(1px) translateZ(0);
-    //     transition-duration: 1s;
-    //     background: $green;
-    //   }
-
-    //   .Elavon {
-    //     transition: perspective(1px) translateZ(0);
-    //     transition-duration: 1s;
-    //     background: $purple;
-    //     color: $white;
-    //   }
-
-    //   .Liv2BGirl {
-    //     transition: perspective(1px) translateZ(0);
-    //     transition-duration: 1s;
-    //     background: $blue;
-    //   }
-
-    //   .SlackBot {
-    //     transition: perspective(1px) translateZ(0);
-    //     transition-duration: 1s;
-    //     background: $red;
-    //     color: $white;
-    //   }
-
-    //   .Npp {
-    //     transition: perspective(1px) translateZ(0);
-    //     transition-duration: 1s;
-    //     background: $yellow;
-    //   }
-    // }
+  .ProjectCard:last-child {
+    margin-bottom: 0;
   }
 }
-
-.SpotifyCard {
-  @media (min-width: 1210px) {
-    &:hover {
-      transition: all 0.5s ease-in-out;
-      background: rgba($green, 0.3);
-    }
-  }
-}
-
-.ElavonCard {
-  @media (min-width: 1210px) {
-    &:hover {
-      transition: all 0.5s ease-in-out;
-      background: rgba($purple, 0.3);
-    }
-  }
-}
-
-.Liv2BGirlCard {
-  @media (min-width: 1210px) {
-    &:hover {
-      transition: all 0.5s ease-in-out;
-      background: rgba($blue, 0.3);
-    }
-  }
-}
-
-.SlackbotCard {
-  @media (min-width: 1210px) {
-    &:hover {
-      transition: all 0.5s ease-in-out;
-      background: rgba($red, 0.3);
-    }
-  }
-}
-
-.NppCard {
-  @media (min-width: 1210px) {
-    &:hover {
-      transition: all 0.5s ease-in-out;
-      background: rgba($yellow, 0.3);
-    }
-  }
-}
-
-// .Spotify,
-// .Elavon,
-// .Liv2BGirl,
-// .SlackBot,
-// .Npp {
-//   display: inline;
-//   padding: 1px;
-//   word-wrap: break-word;
-//   position: relative;
-// }
-
-// .Spotify {
-//   background: $green;
-
-//   @media (min-width: 1210px) {
-//     background: transparent;
-//   }
-// }
-
-// .Elavon {
-//   background: $purple;
-//   color: $white;
-
-//   @media (min-width: 1210px) {
-//     background: transparent;
-//     color: $black;
-//   }
-// }
-
-// .Liv2BGirl {
-//   background: $blue;
-
-//   @media (min-width: 1210px) {
-//     background: transparent;
-//     color: $black;
-//   }
-// }
-
-// .SlackBot {
-//   background: $red;
-//   color: $white;
-
-//   @media (min-width: 1210px) {
-//     background: transparent;
-//     color: $black;
-//   }
-// }
-
-// .Npp {
-//   background: $yellow;
-
-//   @media (min-width: 1210px) {
-//     background: transparent;
-//   }
-// }

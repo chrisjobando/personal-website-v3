@@ -22,6 +22,13 @@ export default () => {
         delay={(_, i) => i * 100 + 450}
       >
         <Link
+          to="/"
+          className={style.NavLink}
+          activeClassName={style.ActiveNav}
+        >
+          <h3>WORK</h3>
+        </Link>
+        <Link
           to="/projects"
           className={style.NavLink}
           activeClassName={style.ActiveNav}

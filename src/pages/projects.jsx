@@ -1,10 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import Anime from 'react-anime';
+// import Anime from 'react-anime';
 
-// Projects
-import Npp from '../components/Projects/Npp';
-import Slackbot from '../components/Projects/SlackBot';
+// // Projects
+// import Npp from '../components/Projects/Npp';
+// import Slackbot from '../components/Projects/SlackBot';
 
 // Components
 import NavBar from '../components/NavBar';
@@ -21,7 +21,8 @@ export default () => (
     </Helmet>
     <NavBar />
     <div className={project.Container}>
-      <Anime
+      <h1>This page is under construction</h1>
+      {/* <Anime
         opacity={[0, 1]}
         translateX={['-1em', 0]}
         delay={(_, i) => i * 300 + 500}
@@ -30,7 +31,7 @@ export default () => (
           <Npp />
           <Slackbot />
         </div>
-      </Anime>
+      </Anime> */}
     </div>
   </div>
 );
