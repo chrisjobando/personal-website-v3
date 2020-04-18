@@ -190,7 +190,7 @@ const SpotifyPage = () => {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <p>Check it out here</p>
+              <p>CHECK IT OUT HERE</p>
             </OutboundLink>
           </div>
         </div>
